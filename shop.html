@@ -29,7 +29,6 @@
     
     .topnav {
       overflow: hidden;
-      float: left;
     }
     
     .topnav a {
@@ -50,16 +49,20 @@
       color: #FFFFFF;
     }
     
+    .topnav .icon {
+      display: none;
+    }
     
-    @media screen and (max-width: 387px) {
-      .topnav a:not(:first-child) {display: none;}
+    
+    @media screen and (max-width: 476px) {
+      .topnav a {display: none;}
       .topnav a.icon {
         float: right;
         display: block;
       }
     }
     
-    @media screen and (max-width: 387px) {
+    @media screen and (max-width: 476px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive a.icon {
         position: absolute;
@@ -79,15 +82,16 @@
 <header>
   <h2><a href="homepage">ELIN.</a><h2>
     
-  <div class="topnav">
-  	<a href="homepage">Home</a>
-    <a class="active" href="shop">Shop</a>
+  <div class="topnav" id="myTopnav">
+    <a href="homepage">Home</a>
+    <a class="active" href="Shop">Shop</a>
     <a href="services">Services</a>
     <a href="contact">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
+    
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
