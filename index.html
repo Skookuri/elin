@@ -21,15 +21,16 @@
     .center{
       position: fixed;
       left: 50%;
-      top: 35%;
+      top: 35%; /*to make it properly 'centered' in other non desktop devices*/
       transform: translate(-50%,-50%);
     }
     
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 800px) {
       .center {
         top: 20%
       }
-    }
+    } 
+    /*to make it properly 'centered' in desktop*/
     
     body {
     height: 95vh;
