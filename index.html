@@ -21,16 +21,28 @@
     .center{
       position: fixed;
       left: 50%;
-      top: 35%; /*to make it properly 'centered' in other non desktop devices*/
       transform: translate(-50%,-50%);
     }
     
-    @media screen and (min-width: 900px) {
+    @media screen and (max-width: 767px) {
       .center {
-        top: 20%
+        top: 35% /*to make it properly 'centered' in phone devices*/
       }
-    } 
-    /*to make it properly 'centered' in desktop*/
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .center {
+        top: 35% /*to make it properly 'centered' in desktop*/
+      }
+    }
+    
+    @media screen and (min-width: 1024px) {
+      .center {
+        top: 20% /*to make it properly 'centered' in desktop*/
+      }
+    }
+    
+    
     
     body {
     height: 95vh;
