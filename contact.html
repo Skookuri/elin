@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--^^Icon for hamburger menu^^-->
   <style type="text/css">
+    .someHeader {
+      height: 50px;
+    }
+    
+    ul {
+      font-family:garamond;
+      color:#82614A;
+    }
+    
     h1 {
       color:#82614A; 
       font-size: 200px; 
@@ -22,6 +31,24 @@
       font-family:garamond; 
       font-weight: bold;
       float: left;
+    }
+    
+    h3 {
+      color:#82614A;
+      font-size: 25px; 
+      font-family:garamond; 
+      font-weight: bold;
+      text-align: center;
+      float: center;
+    }
+    
+    h4 {
+      color:#82614A;
+      font-size: 17px; 
+      font-family:garamond; 
+      font-style: italic;
+      text-align: center;
+      float: center;
     }
     
     a {color: inherit; text-decoration: none;}
@@ -75,7 +102,40 @@
         text-align: left;
       }
     }
-  </style>
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #82614A;
+      color: #FFFFFF;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #FFFFFF;
+      color: #82614A;
+    }
+
+    .container {
+      border-radius: 5px;
+      border-color: #82614A;
+      border-style: solid;
+      padding: 20px;
+    }
+</style>
 </head>
 
   
@@ -105,6 +165,39 @@
 </header>
   
 <body style="background-color:#EBDED5;">
+  <div class="someHeader"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h4>Let us know if you have any questions!</h4>
+  <ul>
+    <li>Phone Number: 2341-333-231</li>
+    <li>Email: elin@emailwebsiteblahblah.com</li>
+    <li>Location: 123 Rodney Street Riskan Town, QO, Bergerlands</li>
+  </ul>
+  <h3>Contact Form</h3>
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="example@gmail.com..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="bergerlands">Bergerlands</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+  </form>
 </body>
 
 
