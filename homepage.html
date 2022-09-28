@@ -105,16 +105,21 @@
       }
     }
     
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-      img {
-        width: 70%;
-      }
-    }
-    
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       img {
         width: 50%;
+        transform: translate(50%, 0);
       }
+      
+      .caption-container {
+      	width: 50%;
+        transform: translate(50%, 0);
+      }
+      
+      /*.row {
+      	row-gap: 0px;
+      }*/
+      
     }
 
     /* Position the image container (needed to position the left and right arrows) */
@@ -158,12 +163,12 @@
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(130,97,74, 0.8);
     }
 
     /* Number text (1/3 etc) */
     .numbertext {
-      color: #f2f2f2;
+      color: #82614A;
       font-size: 12px;
       padding: 8px 12px;
       position: absolute;
@@ -294,31 +299,31 @@
     <div class="column">
       <img class="demo cursor" 
       src="https://images.pexels.com/photos/10679206/pexels-photo-10679206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-      style="width:100%" onclick="currentSlide(1)" alt="Rye Suit">
+      onclick="currentSlide(1)" alt="Rye Suit">
     </div>
     <div class="column">
       <img class="demo cursor"
       src="https://images.pexels.com/photos/7654043/pexels-photo-7654043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      style="width:100%" onclick="currentSlide(2)" alt="Field Jacket">
+      onclick="currentSlide(2)" alt="Field Jacket">
     </div>
     <div class="column">
       <img class="demo cursor"
       src="https://images.pexels.com/photos/5119932/pexels-photo-5119932.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-      style="width:100%" onclick="currentSlide(3)" alt="Moon Coat">
+      onclick="currentSlide(3)" alt="Moon Coat">
     </div>
     <div class="column">
       <img class="demo cursor" 
       src="https://images.pexels.com/photos/5839962/pexels-photo-5839962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
-      style="width:100%" onclick="currentSlide(4)" alt="Casualwear">
+      onclick="currentSlide(4)" alt="Casualwear">
     </div>
     <div class="column">
       <img class="demo cursor" src="https://images.pexels.com/photos/3205751/pexels-photo-3205751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      style="width:100%" onclick="currentSlide(5)" alt="Puffer Jacket">
+      onclick="currentSlide(5)" alt="Puffer Jacket">
     </div>
     <div class="column">
       <img class="demo cursor"
       src="https://images.pexels.com/photos/3206165/pexels-photo-3206165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      style="width:100%" onclick="currentSlide(6)" alt="Over Jacket">
+      onclick="currentSlide(6)" alt="Overcoat">
     </div>
   </div>
 </div>
